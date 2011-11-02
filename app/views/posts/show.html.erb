@@ -1,0 +1,29 @@
+<article class="twoway wrapper">
+<h3><%= @post.title%></h3>
+<section class="article_detail">
+<span>Tags:</span>
+<% @post.tags.each do |category|%>
+<%= link_to category.name,tag_url(category.name) %>
+<% end %> / 
+<span>Comments(<%=@post.comments.size%>)</span> / 
+<time datetime="<%=@post.created_at.to_s(:rfc822)%>"><%=@post.created_at.strftime('%b %d, %Y')%></time>
+</section>
+<section id="article_content" class="article_preview">
+<p><%= @post.content.html_safe %></p>
+</section>
+<% if @post.find_related_tags.length > 0 %>
+<section id="releated_articles">
+    <h4>Releted Articles</h4>
+    <ul>
+    <% @post.find_related_tags.each do |releated_post| %>
+    <li><%= link_to releated_post.title, post_url(releated_post.name) %></li>
+    <% end %>
+    </ul>
+</section>
+<% end %>
+<%= render @post.comments %>
+<% if @post.commentable %>
+<%= render 'comments/form' %>
+<% end %>
+<br/>
+</article>

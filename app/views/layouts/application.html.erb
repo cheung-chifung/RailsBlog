@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+
+	
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<title>Lux et veritas</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="alternate" type="application/rss+xml"href="http://blog.keekun.com/posts.rss" title="Lux et veritas">
+        <%= auto_discovery_link_tag(:rss, "http://blog.keekun.com") %>
+        <%= stylesheet_link_tag    "application" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1><a href="/">Lux et veritas</a></h1>
+				<h2>#Mathematics,Science & Aesthetics   #<%= link_to 'About', page_url('chifung_cheung')%> #<a href="/posts.rss">RSS</a></h2>
+			</div>
+		</header>
+        <section>
+        <figure class="stripes" id="fig1""></figure>
+        </section>
+		
+		
+        <%= yield %>
+
+        <footer>
+        <figure class="stripes"> </figure>
+        <section class="twoway" id="footer">
+        <article class="wrapper">
+        <h4>About this site</h4>
+        <p>This site,its design and code are developed by <%= link_to 'Cheung Chifung', page_url('chifung_cheung')%> and powered by <a href="http://rubyonrails.org/" target="_blank">Rails 3.1</a>. All rights reserved. </p>
+        </article>
+        <article class="wrapper">
+        <h4>About me</h4>
+        <p><a href="http://www.twitter.com/kee_kun" target="_blank">@Kee_Kun</a></p>
+        <p>Male,from Canton Province,China.Studying in Japan(Engineering Management Graduate Program). </p>
+        </article>
+        </section>
+        </footer>
+	</body>
+	
+</html>

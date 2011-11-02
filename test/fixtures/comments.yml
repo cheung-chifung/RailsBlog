@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  commenter: MyString
+  email: MyString
+  website: MyString
+  body: MyText
+  post: 
+  parent_id: 1
+  lft: 1
+  rgt: 1
+
+two:
+  commenter: MyString
+  email: MyString
+  website: MyString
+  body: MyText
+  post: 
+  parent_id: 1
+  lft: 1
+  rgt: 1

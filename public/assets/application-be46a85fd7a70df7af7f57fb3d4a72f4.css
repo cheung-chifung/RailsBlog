@@ -1,0 +1,614 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+
+@font-face {
+    font-family: "Day Roman";
+    src: url('/images/day_roman.ttf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Prata);
+
+body {
+    background:url('/images/bgd.png'); 
+    font-family: 'STSong','Microsoft YaHei','MS PMincho','Times New Roman',serif;
+}
+
+header h1 {
+    font-family: 'Day Roman',serif;
+}
+
+header h2 {
+    font-family: 'Parta',serif;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: rgba(150,80,80,0.9);
+    text-shadow: 0 0 1px rgba(200,200,200,0.8);
+}
+
+a:hover {
+    color: rgba(210,100,100,0.9);
+    text-shadow: 0 0 3px rgba(200,150,150,0.8);
+
+}
+
+h1 a {
+    color: black;
+}
+    
+
+#article_content {
+    clear: both;
+    margin-top: 3em;
+}
+
+.article_preview p {
+    padding: 0.2em 0;
+}
+
+#article_page {
+    margin-top: 1em;
+    padding-bottom: 3em;
+}
+
+#releated_articles {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 0.01em dotted #CDCCC8
+}
+
+#releated_articles h4 {
+    color: #9E9C95;
+}
+
+figure.stripes {
+display: block;
+width: 100%;
+
+box-shadow:0 0 16px rgba(150,150,150,0.9) inset;
+
+background-color: rgba(209,216,227,0.5);
+background-image: repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+background-image: -moz-repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), -moz-repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+background-image: -webkit-repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), -webkit-repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+}
+
+.twoway footer { clear:both; text-align:center; }
+
+#footer {
+    text-shadow: 1px 1px 0 white;
+    margin-top: 1em;
+} 
+#footer h4 {
+    color: rgba(150, 80, 80, 0.9);
+}
+#footer p {
+    color: #9E9C95;
+}
+#footer article {
+    padding-bottom: 1em;
+}
+section.article_detail {
+    color: #9E9C95;
+    font-size:0.8em;
+    clear: both;
+    float: right;
+}
+section#create_form {
+    clear: both;
+    padding: 2em 1em;
+}
+section#create_form em {
+    color: rgba(150, 80, 80, 0.9);
+}
+.pagination { padding: 2em; }
+.pagination a:active { color: #000; }
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; font-weight: bold; background-color: #000099; color: #FFF; }
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; color: #ddd; }
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+/*
+*
+*  Margin, padding, and border resets
+*  except for form elements
+*
+*/
+/* line 27, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+*
+*  Consistency fixes
+*  adopted from http://necolas.github.com/normalize.css/
+*
+*/
+/* line 41, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 46, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+body {
+  min-height: 100%;
+  font-size: 100%;
+}
+
+/* line 51, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section, audio, canvas, video {
+  display: block;
+}
+
+/* line 54, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 60, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 63, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 66, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 71, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 74, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 77, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+input, textarea, button, select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
+/* line 86, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 91, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 98, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+textarea {
+  overflow: auto;
+  height: 9em;
+}
+
+/* line 103, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+input[type=text], input[type=password],
+textarea {
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #EFEFEF;
+  color: #555;
+  padding: 0.1em;
+}
+
+/* line 111, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+input[type="submit"] {
+  background: -moz-linear-gradient(center top, white, #f1f1f1 1%, #f1f1f1 50%, #dfdfdf 99%, #cccccc) repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(center top, white, #f1f1f1 1%, #f1f1f1 50%, #dfdfdf 99%, #cccccc) repeat scroll 0 0 transparent;
+  background: linear-gradient(center top, white, #f1f1f1 1%, #f1f1f1 50%, #dfdfdf 99%, #cccccc) repeat scroll 0 0 transparent;
+  box-shadow: 1px 1px 2px #E7E7E7;
+  border-color: #CCCCCC #999999 #999999 #CCCCCC;
+  border-radius: 3px 3px 3px 3px;
+  border-style: solid;
+  border-width: 1px;
+  color: #666666;
+  cursor: pointer;
+  padding: 5px 20px;
+  text-shadow: 0 -1px 1px white, -1px 0 1px white, 1px 0 1px #aaaaaa;
+}
+
+/* line 125, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+*
+*  Simple fluid media
+*
+*/
+/* line 137, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+figure {
+  position: relative;
+}
+
+/* line 140, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 146, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+section figure.stripes {
+  height: 4.5em;
+}
+
+/* line 149, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+footer figure.stripes {
+  height: 7.5em;
+}
+
+/*
+*
+*	Zoomable baseline grid
+*	type size presets
+*
+*/
+/* line 159, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+body {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 165, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.small {
+  /* 13px / 18px */
+  font-size: 0.813em;
+  line-height: 1.385em;
+}
+
+/* line 171, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.normal, h3 {
+  /* 16px / 24px */
+  font-size: 1em;
+  line-height: 1.5em;
+  /* 24 */
+}
+
+/* line 177, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.large, h2, h1 {
+  /* 26 / 36px */
+  font-size: 1.625em;
+  line-height: 1.385em;
+}
+
+/* line 183, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.huge, .ie h1, h1 {
+  /* 42px / 48px */
+  font-size: 2.625em;
+  line-height: 1.143em;
+}
+
+/* line 189, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.massive {
+  /* 68px / 72px */
+  font-size: 4.25em;
+  line-height: 1.059em;
+}
+
+/* line 195, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.gigantic {
+  /* 110px / 120px */
+  font-size: 6.875em;
+  line-height: 1.091em;
+}
+
+/* line 201, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+article.wrapper h3 {
+  border-bottom: 0.048em dotted #3d3c38;
+}
+
+/* line 205, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+img {
+  display: block;
+  border: solid 1px #EFEFEF;
+  background-color: white;
+  padding: 0.12em;
+}
+
+/* line 211, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.article_preview img {
+  width: 90%;
+  margin: 0.24em auto;
+  padding: 0.48em;
+}
+
+/* line 216, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+article a:hover img {
+  border: solid 1px #CCC;
+  -moz-box-shadow: 1px 1px 5px #999;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+}
+
+/* line 222, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment {
+  clear: both;
+  margin: 0.48em;
+}
+
+/* line 226, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment dt {
+  float: left;
+  margin: 0.48em;
+}
+
+/* line 230, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment dd {
+  color: #999;
+  float: left;
+  margin: 0.48em;
+  padding: 0.48em;
+  border: solid 1px #EFEFEF;
+  background-color: white;
+  width: 80%;
+  -moz-box-shadow: 1px 1px 3px #EFEFEF;
+  -webkit-box-shadow: 1px 1px 3px #EFEFEF;
+  box-shadow: 1px 1px 3px #EFEFEF;
+}
+
+/* line 242, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment dd:hover {
+  color: black;
+  -moz-box-shadow: 1px 1px 3px #C88;
+  -webkit-box-shadow: 1px 1px 3px #C88;
+  box-shadow: 1px 1px 3px #C88;
+}
+
+/* line 248, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment dd p {
+  font-size: 0.8em;
+}
+
+/* line 251, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+dl.comment dd span {
+  display: block;
+  width: 90%;
+  padding-bottom: 0.24em;
+  margin-bottom: 0.48em;
+  border-bottom: 0.12em dotted #cccccc;
+}
+
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+/* line 268, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+header, .twoway {
+  margin: 0 5.556%;
+}
+
+/* line 272, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+h1, h2 {
+  margin: 0.923em 0 1.385em;
+}
+
+/* line 276, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+h2 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* line 281, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+h3 {
+  margin: 0.75em 0 0.375em;
+  font-size: 2em;
+}
+
+/*
+*  Simple elastic gutters
+*  Note: box-sizing will not work in IE6-8
+*/
+/* line 291, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.wrapper {
+  padding: 0 0.75em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+*
+*  Fixes for IE6-8
+*  http://jonikorpi.com/leaving-old-IE-behind/
+*
+*/
+/* line 308, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.ie body {
+  width: 40em;
+  margin: 0 auto;
+  font-size: 1.063em;
+}
+
+/* line 314, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+.ie h1 {
+  margin: 1.143em 0 0.571em;
+}
+
+/* @media screen and (min-width: 640px) */
+@media screen and (min-width: 40em) {
+  /* line 322, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.063em;
+  }
+
+  /* line 327, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  h1 {
+    margin: 1.143em 0 0.571em;
+  }
+}
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  /* line 348, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em;
+  }
+
+  /* line 353, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  .twoway .wrapper {
+    float: left;
+    width: 50%;
+  }
+}
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  /* line 363, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.063em;
+  }
+}
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  /* line 373, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1em;
+  }
+
+  /* line 378, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  header, .twoway {
+    margin: 0 16.667%;
+  }
+}
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  /* line 388, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.063em;
+  }
+}
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  /* line 399, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1em;
+  }
+}
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  /* line 410, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.063em;
+  }
+
+  /* line 415, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  header, .twoway {
+    margin: 0 27.778%;
+  }
+}
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  /* line 434, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  header, .twoway {
+    margin: 0 5.556%;
+  }
+
+  /* line 438, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  header .wrapper {
+    width: 37.5%;
+    margin-left: 25%;
+  }
+
+  /* line 443, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  .twoway .wrapper {
+    width: 25%;
+  }
+
+  /* line 447, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  .twoway .wrapper:first-child {
+    margin-left: 25%;
+  }
+}
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+  /* line 457, /web/keekun/railsblog/app/assets/stylesheets/GGS.scss */
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+    font-size: 1.125em;
+    max-width: 160 em;
+  }
+}

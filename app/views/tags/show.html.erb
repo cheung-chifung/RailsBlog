@@ -1,0 +1,26 @@
+<section class="wrapper twoway">
+    <% if @posts.size > 0 %>
+      <% @posts.each do |post| %>
+        <article class="wrapper article_preview">
+            <h3> <%= link_to post.title, post_url(post.name) %> </h3>
+            <p>
+                <% if post.preview == nil or post.preview == '' %>
+               <%= post.content.html_safe %> 
+                <% else %>
+               <%= post.preview.html_safe %> 
+               <br/>
+                <%= link_to 'Read more..', post_url(post.name) %>
+                <% end %>
+            </p>
+            <p>
+            <section class="article_detail"><span>Comments(<%=post.comments.size%>)</span> @ <time datetime="<%=post.created_at.to_s(:rfc822)%>"><%=post.created_at.strftime('%b %d, %Y')%></time></section>
+            </p>
+        </article>
+      <% end %>
+    <% else %>
+    <% end %>
+    <footer>
+        <%= will_paginate @posts %>
+    </footer>
+</section>
+

@@ -1,0 +1,25 @@
+<section id="create_form">
+<%= notice %>
+<%= form_for(Comment.new, :url => new_comment_url(@post.name), :method => 'post' ) do |f| %>
+  <div class="field">
+    <%= f.label :commenter %><br />
+    <%= f.text_field :commenter %><em><%=h @comment.errors[:commenter] if @comment %></em>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %><em><%=h @comment.errors[:website] if @comment %></em>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %><em><%=h @comment.errors[:email] if @comment %></em>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+    <em><%=h @comment.errors[:body] if @comment %></em>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</section>

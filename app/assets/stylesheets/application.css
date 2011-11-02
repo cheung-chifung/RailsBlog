@@ -1,0 +1,122 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+@font-face {
+    font-family: "Day Roman";
+    src: url('/images/day_roman.ttf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Prata);
+
+body {
+    background:url('/images/bgd.png'); 
+    font-family: 'STSong','Microsoft YaHei','MS PMincho','Times New Roman',serif;
+}
+
+header h1 {
+    font-family: 'Day Roman',serif;
+}
+
+header h2 {
+    font-family: 'Parta',serif;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: rgba(150,80,80,0.9);
+    text-shadow: 0 0 1px rgba(200,200,200,0.8);
+}
+
+a:hover {
+    color: rgba(210,100,100,0.9);
+    text-shadow: 0 0 3px rgba(200,150,150,0.8);
+
+}
+
+h1 a {
+    color: black;
+}
+    
+
+#article_content {
+    clear: both;
+    margin-top: 3em;
+}
+
+.article_preview p {
+    padding: 0.2em 0;
+}
+
+#article_page {
+    margin-top: 1em;
+    padding-bottom: 3em;
+}
+
+#releated_articles {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 0.01em dotted #CDCCC8
+}
+
+#releated_articles h4 {
+    color: #9E9C95;
+}
+
+figure.stripes {
+display: block;
+width: 100%;
+
+box-shadow:0 0 16px rgba(150,150,150,0.9) inset;
+
+background-color: rgba(209,216,227,0.5);
+background-image: repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+background-image: -moz-repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), -moz-repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+background-image: -webkit-repeating-linear-gradient(45deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 120px, rgba(164,164,176, 0.5) 120px, rgba(164,164,176, 0.5) 140px), -webkit-repeating-linear-gradient(135deg, transparent 5px, rgba(164,164,176, 0.5) 5px, rgba(164,164,176, 0.5) 10px, rgba(223, 90, 67, 0) 10px, rgba(223, 90, 67, 0) 35px, rgba(223, 90, 67, 0.5) 35px, rgba(223, 90, 67, 0.5) 40px, rgba(164,164,176, 0.5) 40px, rgba(164,164,176, 0.5) 50px, rgba(164,164,176, 0) 50px, rgba(164,164,176, 0) 60px, rgba(223, 90, 67, 0.5) 60px, rgba(223, 90, 67, 0.5) 70px, rgba(255,237,196, 0.5) 70px, rgba(255,237,196, 0.5) 80px, rgba(255,237,196, 0) 80px, rgba(255,237,196, 0) 90px, rgba(223, 90, 67, 0.5) 90px, rgba(223, 90, 67, 0.5) 110px, rgba(223, 90, 67, 0) 110px, rgba(223, 90, 67, 0) 140px, rgba(164,164,176, 0.5) 140px, rgba(164,164,176, 0.5) 160px);
+}
+
+.twoway footer { clear:both; text-align:center; }
+
+#footer {
+    text-shadow: 1px 1px 0 white;
+    margin-top: 1em;
+} 
+#footer h4 {
+    color: rgba(150, 80, 80, 0.9);
+}
+#footer p {
+    color: #9E9C95;
+}
+#footer article {
+    padding-bottom: 1em;
+}
+section.article_detail {
+    color: #9E9C95;
+    font-size:0.8em;
+    clear: both;
+    float: right;
+}
+section#create_form {
+    clear: both;
+    padding: 2em 1em;
+}
+section#create_form em {
+    color: rgba(150, 80, 80, 0.9);
+}
+.pagination { padding: 2em; }
+.pagination a:active { color: #000; }
+.pagination span.current { padding: 2px 5px 2px 5px; margin: 2px; font-weight: bold; background-color: #000099; color: #FFF; }
+.pagination span.disabled { padding: 2px 5px 2px 5px; margin: 2px; color: #ddd; }
